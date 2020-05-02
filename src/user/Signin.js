@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import {signup} from '../auth'
-
-class Signup extends Component {
+import {Redirect} from "react-router-dom"
+import {signin, authenticate} from "../auth"
+class Signin extends Component {
 	constructor() {
 		super()
 		this.state = {
-			name: "",
 			email: "",
 			password: "",
 			error: "",
-			open: false
+			redirectToReferer: false,
+			loading: false
 		}
 	}
 
@@ -18,42 +18,34 @@ class Signup extends Component {
 		this.setState({[name]: event.target.value });
 	};
 
+
 	clickSubmit = event => {
 		event.preventDefault()  //Default behaviour won't repeat like reloading of page on clicking Submit button
-		const {name, email, password} = this.state
+		this.setState({loading: true})
+		const {email, password} = this.state
 		const user = {
-			name,
 			email,
 			password
 		};
 		// console.log(user)
-		signup(user)
+		signin(user)
 		.then(data => {
 			if(data.error)
-				this.setState({error: data.error})
-			else
-				this.setState({
-					error: "",
-					name: "",
-					email: "",
-					password: "",
-					open: true
+				this.setState({error: data.error, loading: false})
+			else {
+				// authenticate
+				authenticate(data, () => {
+					this.setState({redirectToReferer: true})
 				})
+				
+			}
 
 		})
 	};
 
-	signupForm = (name, email, password) => (
+
+	signinForm = (email, password) => (
 		<form>
-			<div className="form-group">
-				<label className="text-muted">Name</label>
-				<input  
-					onChange={this.handleChange("name")} 
-					type="text" 
-					className="form-control" 
-					value={name}
-						/>
-					</div>
 			<div className="form-group">
 				<label className="text-muted">Email</label>
 				<input 
@@ -80,10 +72,14 @@ class Signup extends Component {
 
 	
 	render() {
-		const {name, email, password, error, open} = this.state 
+		const {email, password, error, redirectToReferer, loading} = this.state 
+		
+		if(redirectToReferer) {
+			return <Redirect to="/" />
+		}
 		return (
 			<div className="container">
-				<h2 className="mt-5 mb-5">Signup</h2>
+				<h2 className="mt-5 mb-5">Signin</h2>
 				
 				<div 
 					className="alert alert-primary" 
@@ -91,15 +87,15 @@ class Signup extends Component {
 				>
 					{error}
 				</div>
-
-				<div 
-					className="alert alert-info" 
-					style={{ display: open ? "" : "none" }}
-				>
-					New account is successfully created. Please Sign In.
-				</div>
-
-				{this.signupForm(name, email, password)}
+				
+				{loading ? (
+							<div className="jumbotron text-center">
+								<h2>Loading...</h2>
+							</div>
+					) : (
+							""
+					)}	
+				{this.signinForm(email, password)}
 				
 
 			</div>
@@ -107,4 +103,4 @@ class Signup extends Component {
 	}
 }
 
-export default Signup;
+export default Signin;
