@@ -1,8 +1,17 @@
 .jumbotron {
-	background: black;
-	color: white;
+	background: #080808;
 }
 
+.col-md-10 {
+	color: white;
+}
+span{
+	align-content: center
+}
 body {
-	background-color: #00cc99
+	background-color: #eeeeee
+}
+
+hr {
+	border: 4px solid #222222;
 }

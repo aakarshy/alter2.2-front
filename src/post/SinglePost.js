@@ -95,7 +95,7 @@ class SinglePost extends Component {
 		    	onError={i => 
 		    		{i.target.src = `${DefaultImage}`}
 		    	}
-		    	className = "img-thumbnail mb-3 rext-center"
+		    	className = "img-thumbnail mb-3 text-center"
 		    	style={{ height: "300px", width: "auto", objectFit: "cover"}}
 		    />
 		    </div>
