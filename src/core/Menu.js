@@ -10,9 +10,25 @@ const isActive = (history, path) => {
 
 const Menu = ({history}) => (
 	<div>
-		<ul className="nav nav-tabs bg-primary">
+		<ul className="nav nav-tabs" style = {{ backgroundColor: "#222222"}}>
 			<li className="nav-item">
-				<Link className="nav-link" style={isActive(history,"/")} to="/">Home</Link>
+				<Link 
+					className="nav-link" 
+					style={isActive(history,"/")} 
+					to="/"
+				>
+					Home
+				</Link>
+			</li>
+
+			<li className="nav-item">
+				<Link 
+					className="nav-link" 
+					style={isActive(history,"/users")} 
+					to="/users"
+				>
+					Users
+				</Link>
 			</li>
 
 			{!isAuthenticated() && (
@@ -28,19 +44,50 @@ const Menu = ({history}) => (
 
 			{isAuthenticated() && (
 				<>
+					
 					<li className="nav-item">
-						<a 
+						<Link to = {`/findpeople`}
+						  style={
+						  			isActive(history,
+						  			`/findpeople`
+							  		)
+						  		} 
+						  className = "nav-link">
+							Find People 
+						</Link>
+					</li>
+
+					<li className="nav-item">
+						<Link to = {`/post/create`}
+						  style={
+						  			isActive(history,
+						  			`/post/create`
+							  		)
+						  		} 
+						  className = "nav-link">
+							Create Post
+						</Link>
+					</li>
+
+					<li className="nav-item">
+						<Link to = {`/user/${isAuthenticated().user._id}`}
+						  style={
+						  			isActive(history,
+						  			`/user/${isAuthenticated().user._id}`
+							  		)
+						  		} 
+						  className = "nav-link">
+							{`${isAuthenticated().user.name}'s profile`} 
+						</Link>
+					</li>
+
+					<li className="nav-item">
+						<span 
 							className="nav-link" 
 							style={isActive(history,"/signup"), {cursor: "pointer", color: "#ffffff"}} 
 							onClick={() => signout(() => history.push('/'))}
-							to="/signout">Sign Out</a>
+							to="/signout">Sign Out</span>
 						{/* in signout we use a tag instead of link tag because we are not linking two different components */}
-					</li>
-					<li className="nav-item">
-						<Link to = {`/user/${isAuthenticated().user._id}`}
-						  style={{color: '#fff'}} className = "nav-link">
-							{`${isAuthenticated().user.name}'s profile`} 
-						</Link>
 					</li>
 				</>
 			)}	

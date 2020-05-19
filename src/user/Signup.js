@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import {signup} from '../auth'
+import { Link } from "react-router-dom"
+import SocialLogin from "./SocialLogin"
+import Facebook from "./FbLogin"
 
 class Signup extends Component {
 	constructor() {
@@ -84,7 +87,12 @@ class Signup extends Component {
 		return (
 			<div className="container">
 				<h2 className="mt-5 mb-5">Signup</h2>
-				
+				<hr />  
+				<>
+				   <td><SocialLogin /></td>
+				   <td><Facebook /></td> 
+				</>
+				<hr />
 				<div 
 					className="alert alert-primary" 
 					style={{ display: error ? "" : "none" }}
@@ -96,7 +104,7 @@ class Signup extends Component {
 					className="alert alert-info" 
 					style={{ display: open ? "" : "none" }}
 				>
-					New account is successfully created. Please Sign In.
+					New account is successfully created. Please <Link to="/sigin">Sign In</Link>
 				</div>
 
 				{this.signupForm(name, email, password)}
