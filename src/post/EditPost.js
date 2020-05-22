@@ -19,20 +19,20 @@ class EditPost extends Component {
 		}
 	}
 	init = postId => {
-		singlePost(postId)
-		.then(data => {
-			if(data.error) {
-				this.setState({ redirectToProfile: true })
-			} else
-				this.setState({
-					id: data._id, 
-					title: data.title, 
-					body: data.body,
-					error:'',
-				});
-		})
-	}
-
+            singlePost(postId).then(data => {
+                if (data.error) {
+                    this.setState({ redirectToProfile: true });
+                } else {
+                    this.setState({
+                        // id is not post.postedBy._id
+                        id: data.postedBy._id,
+                        title: data.title,
+                        body: data.body,
+                        error: ""
+                    });
+                }
+            });
+        };
 	componentDidMount() {
 		this.postData = new FormData()
 		const postId = this.props.match.params.postId
@@ -186,9 +186,12 @@ class EditPost extends Component {
  					onError={i => (i.target.src = `${DefaultImage}`)}
 					alt={title} 
 				/>
-				
-				{this.editPostForm(title,body)}
-			</div>
+		
+	           	 { (isAuthenticated().user.role === "admin" ||
+                    isAuthenticated().user._id == id ) &&
+                 
+                    this.editPostForm(title, body)}			
+            </div>
 		)
 	}
 }

@@ -109,31 +109,31 @@ class EditProfile extends Component {
 	};
 
 	clickSubmit = event => {
-		event.preventDefault()  //Default behaviour won't repeat like reloading of page on clicking Submit button
-		this.setState({loading: true})
-		if(this.isValid()){
-			// const { name, email, password} = this.state
-			// const user = {
-			// 	name,
-			// 	email,
-			// 	password: password || undefined
-			// };
-		 // console.log(user)
-			const userId = this.props.match.params.userId;
-			const token = isAuthenticated().token;
-	
-			update(userId, token, this.userData)
-			.then(data => {
-				if(data.error)
-					this.setState({error: data.error})
-				else
-					updateUser(data, () => {
-						this.setState({
-							redirectToProfile: true
-						})
-					})
-			})
-		}
+	    event.preventDefault();
+	    this.setState({ loading: true });
+	 
+	    if (this.isValid()) {
+	        const userId = this.props.match.params.userId;
+	        const token = isAuthenticated().token;
+	 
+	        update(userId, token, this.userData).then(data => {
+	            if (data.error) {
+	                this.setState({ error: data.error });
+	                // if admin only redirect
+	            } else if (isAuthenticated().user.role === "admin") {
+	                this.setState({
+	                    redirectToProfile: true
+	                });
+	            } else {
+	                // if same user update localstorage and redirect
+	                updateUser(data, () => {
+	                    this.setState({
+	                        redirectToProfile: true
+	                    });
+	                });
+	            }
+	        });
+	    }
 	};
 
 	signupForm = (name, email, password, about) => (
@@ -226,7 +226,9 @@ class EditProfile extends Component {
 					alt={name} 
 				/>
 
-				{this.signupForm(name, email, password, about)}
+				{(isAuthenticated().user.role === "admin" ||
+				    isAuthenticated().user._id == id) &&
+				        this.signupForm(name, email, password, about)}
 			</div>
 		);
 	}
