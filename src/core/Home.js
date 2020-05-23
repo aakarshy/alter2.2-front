@@ -29,6 +29,11 @@ const Home = () => (
 		<div className="container">
 			<Posts />
 		</div>
+
+  <div class="footer"><a href="https://sites.google.com/view/privacy-policy-alter/home">
+  	Privacy Policy
+  	</a>
+  </div>
 	</div>
 
 );
