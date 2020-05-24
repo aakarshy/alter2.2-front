@@ -103,6 +103,8 @@ class Comment extends Component {
 
 					{comments.reverse().map((comment, i) => (
 						<div key={i}>
+						{comment.postedBy == null ? null : 
+							<div>
 								<Link to={`/user/${comment.postedBy._id}`}>
 								<img 
 							     	style={{
@@ -147,7 +149,9 @@ class Comment extends Component {
 									</>
 							   )}
 							   </span>	
-							</p>					
+							</p>
+							</div>
+							}
 						</div>
 					))}
 				</div>
