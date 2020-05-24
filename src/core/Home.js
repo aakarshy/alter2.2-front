@@ -15,14 +15,20 @@ const Home = () => (
 			</span>
 		</div>
 		<div className="col-md-8 text-center">
-			<h2>Rules</h2>
+			<h2><strong> A B O U T </strong></h2>
 		<span id="rules">
 
-				<li>Forum meant for KGP peeps</li>
-				<li>Post your fundae query, or anything that you might like to share</li>
-				<li>Your identity can remain anonymous [User's discretion]</li>
-				<li>More features will be added as time progresses </li>
-			
+				A L T E R is a minimalistic, dedicated social network limited to KGPians [mostly]. 
+				The platform aims to build an online community through it's discussion forum. 
+				It's more like a reddit-twitter cross where you can choose to remain completely anonymous
+				(even to the admin) and post without approval. Rebellious. Eh? 
+		
+				<p className="mt-3">
+				Informative posts pertaining to Institute, Academic guidelines etc. are invited because 
+				"APES TOGETHER STRONG" 
+				</p>
+				P.S. Lenient moderation remains though. :)      
+		
 		</span>
 		</div>
 		</div>

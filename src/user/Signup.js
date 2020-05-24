@@ -34,7 +34,7 @@ class Signup extends Component {
 		.then(data => {
 			if(data.error)
 				this.setState({error: data.error})
-			else
+			else {
 				this.setState({
 					error: "",
 					name: "",
@@ -42,6 +42,7 @@ class Signup extends Component {
 					password: "",
 					open: true
 				})
+			}
 
 		})
 	};
@@ -104,7 +105,7 @@ class Signup extends Component {
 					className="alert alert-info" 
 					style={{ display: open ? "" : "none" }}
 				>
-					New account is successfully created. Please <Link to="/sigin">Sign In</Link>
+					New account is successfully created. Please <Link to="/signin">Sign In</Link>
 				</div>
 
 				{this.signupForm(name, email, password)}
