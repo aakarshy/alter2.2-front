@@ -88,12 +88,12 @@ class Signup extends Component {
 		return (
 			<div className="container">
 				<h2 className="mt-5 mb-5">Signup</h2>
-				<hr />  
+				{/*<hr />  
 				<>
 				   <td><SocialLogin /></td>
 				   <td><Facebook /></td> 
 				</>
-				<hr />
+				<hr />*/}
 				<div 
 					className="alert alert-primary" 
 					style={{ display: error ? "" : "none" }}
