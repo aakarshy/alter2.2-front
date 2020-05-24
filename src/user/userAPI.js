@@ -31,8 +31,8 @@ export const update = (userId, token, user) => {
 }
 
 export const remove = (userId, token) => {
-	return fetch(`${process.env.REACT_APP_API_URL}/user/${userId}`, {
-		method: "DELETE",
+	return fetch(`${process.env.REACT_APP_API_URL}/user/${userId}?_method=DELETE`, {
+		method: "POST",
 		headers: {
 			Accept: "application/json",
 			"Content-Type": "application/json",
