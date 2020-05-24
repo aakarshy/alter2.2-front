@@ -65,7 +65,8 @@ class SinglePost extends Component {
 	deletePost = () => {
 		const postId = this.props.match.params.postId
 		const token = isAuthenticated().token
-		remove(postId, token).then(data => {
+		remove(postId, token)
+		.then(data => {
 			if(data.error){
 				console.log(data.error)
 			} else {

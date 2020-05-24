@@ -51,8 +51,9 @@ export const listByUser = (userId, token) => {
 }
 
 export const remove = (postId, token) => {
-	return fetch(`${process.env.REACT_APP_API_URL}/post/${postId}`, {
-		method: "DELETE",
+	console.log(postId, token)
+	return fetch(`${process.env.REACT_APP_API_URL}/post/${postId}?_method=DELETE`, {
+		method: "POST",
 		headers: {
 			Accept: "application/json",
 			"Content-Type": "application/json",
