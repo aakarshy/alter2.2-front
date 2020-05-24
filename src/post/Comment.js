@@ -133,7 +133,7 @@ class Comment extends Component {
 
 								<span>	
 						    	{isAuthenticated().user && 
-						    		isAuthenticated().user._id === comment.postedBy._id && (
+						    		isAuthenticated().user._id == comment.postedBy._id && (
 						  			<>
 							 
 							    		<button 

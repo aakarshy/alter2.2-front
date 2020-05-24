@@ -10,6 +10,7 @@ class EditPost extends Component {
 		super()
 		this.state = {
 			id: '',
+            postId: '',
 			title: '',
 			body: '',
 			redirectToProfile: false,
@@ -26,6 +27,7 @@ class EditPost extends Component {
                     this.setState({
                         // id is not post.postedBy._id
                         id: data.postedBy._id,
+                        postId: data._id,
                         title: data.title,
                         body: data.body,
                         error: ""
@@ -98,7 +100,7 @@ class EditPost extends Component {
         this.setState({ loading: true });
 
         if (this.isValid()) {
-            const postId = this.state.id;
+            const postId = this.state.postId;
             const token = isAuthenticated().token;
 
             update(postId, token, this.postData).then(data => {
@@ -108,8 +110,7 @@ class EditPost extends Component {
                         loading: false,
                         title: "",
                         body: "",
-                        redirectToProfile: true
-                    });
+                        redirectToProfile: true                    });
                 }
             });
         }
