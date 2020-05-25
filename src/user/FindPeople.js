@@ -55,7 +55,7 @@ class FindPeople extends Component {
 	renderUsers= users => (
 		<div className="row">
 			{users.map((user, i) => (
-				<div className="card col-md-3" key={i} style={{marginRight: "2%"}}>
+				<div className="card col-md-3" key={i}>
 				<img 
 					style={{height: "200px", width: "auto"}}
 					className="img-thumbnail"

@@ -117,8 +117,10 @@ class SinglePost extends Component {
 		    	{likes} Like </h3>
 		    )}
 		   
-		    <p className="card-text">
-				<span style={{whiteSpace: "pre-line"}}>{post.body}</span>
+		    <p className="card-text mt-5">
+				<span style={{whiteSpace: "pre-line", fontFamily: 'Source Sans Pro ,sans-serif', fontSize: "1.5em", fontWeight: "500"}}>
+					{post.body}
+				</span>
 			</p>
 			<br/>
 			<p className="font-italic mark">
