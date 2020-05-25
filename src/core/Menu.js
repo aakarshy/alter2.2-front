@@ -45,7 +45,7 @@ const Menu = ({history}) => (
 			{isAuthenticated() && (
 				<>
 					
-					{/*<li className="nav-item">
+					<li className="nav-item">
 						<Link to = {`/findpeople`}
 						  style={
 						  			isActive(history,
@@ -55,7 +55,7 @@ const Menu = ({history}) => (
 						  className = "nav-link">
 							Find People 
 						</Link>
-					</li>*/}
+					</li>
 
 					<li className="nav-item">
 						<Link to = {`/post/create`}
