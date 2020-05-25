@@ -159,7 +159,7 @@ class Profile extends Component {
 				<div className="row">
 					<div className="col-md-12 mt-5 mb-5">
 					<hr/>
-						<p className="lead">{user.about}</p>
+						<p className="lead"><span style={{whiteSpace: "pre-line"}}>{user.about}</span> </p>
 					</div>
 					<hr/>
 					<ProfileTabs 

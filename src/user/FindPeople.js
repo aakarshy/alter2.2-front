@@ -55,7 +55,7 @@ class FindPeople extends Component {
 	renderUsers= users => (
 		<div className="row">
 			{users.map((user, i) => (
-				<div className="card col-md-4" key={i}>
+				<div className="card col-md-3" key={i} style={{marginRight: "2%"}}>
 				<img 
 					style={{height: "200px", width: "auto"}}
 					className="img-thumbnail"
@@ -63,12 +63,13 @@ class FindPeople extends Component {
 					onError={i => (i.target.src = `${DefaultProfile}`)}
 					alt={user.name} 
 				/>
+				<Link to={`/user/${user._id}`}>
 				  <div className="card-body">
 				    <h5 className="card-title">{user.name}</h5>
 				    <p className="card-text">
 						{user.email}
 					</p>
-					<Link
+					{/*<Link
 						to={`/user/${user._id}`} 
 				     	className="btn btn-raised btn-primary btn-sm ">
 				     VIEW PROFILE
@@ -79,8 +80,9 @@ class FindPeople extends Component {
 				    	className="btn btn-raised btn-info float-right btn-sm"
 				    >
 				    		Follow
-				    </button>
+				    </button>*/}
 				  </div>
+				 </Link>
 				</div>
 			))}	
 		</div>

@@ -2,7 +2,7 @@ import React, { Component} from 'react'
 import {singlePost, update} from './apiPost'
 import {isAuthenticated} from '../auth'
 import { Redirect } from "react-router-dom"
-import DefaultImage from "../images/abstract.jpeg"
+import DefaultImage from "../images/abstract.png"
 import imageCompression from 'browser-image-compression'
 
 class EditPost extends Component {

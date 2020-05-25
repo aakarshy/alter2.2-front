@@ -10,14 +10,14 @@ const isActive = (history, path) => {
 
 const Menu = ({history}) => (
 	<div>
-		<ul className="nav nav-tabs" style = {{ backgroundColor: "#161616"}}>
+		<ul className="nav nav-tabs" style = {{ backgroundColor: "#2f4f4f"}}>
 			<li className="nav-item">
 				<Link 
 					className="nav-link" 
 					style={isActive(history,"/")} 
 					to="/"
 				>
-					Home
+					<strong>A L T E R</strong> 
 				</Link>
 			</li>
 
@@ -30,13 +30,12 @@ const Menu = ({history}) => (
 					Users
 				</Link>
 			</li>*/}
-
 			{!isAuthenticated() && (
 				<>
-					<li className="nav-item">
+					<li className="nav-item" style={{marginLeft: "85%"}}>
 						<Link className="nav-link" style={isActive(history,"/signin")} to="/signin">Sign In</Link>
 					</li>
-					<li className="nav-item">
+					<li className="nav-item" >
 						<Link className="nav-link" style={isActive(history,"/signup")} to="/signup">Sign Up</Link>
 					</li>
 				</>

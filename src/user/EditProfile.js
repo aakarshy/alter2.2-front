@@ -100,10 +100,20 @@ class EditProfile extends Component {
 	    });
 	}
 
+
 	handleChange = name => event => {
 		// const value = name === 'photo' ? event.target.files[0] :event.target.value
 		// const fileSize = name === 'photo' ? event.target.files[0].size : 0;
 		const value = event.target.value
+		this.userData.set(name, value)
+		this.setState ({[name]: value})
+	};
+
+
+	handleNewLine = name => event => {
+		// const value = name === 'photo' ? event.target.files[0] :event.target.value
+		// const fileSize = name === 'photo' ? event.target.files[0].size : 0;
+		var value = event.target.value
 		this.userData.set(name, value)
 		this.setState ({[name]: value})
 	};
@@ -167,15 +177,15 @@ class EditProfile extends Component {
 			</div>
 			<div className="form-group">
 				<label className="text-muted">About</label>
-				<textarea 
-					onChange={this.handleChange("about")} 
+				<textarea rows="4" columns="50"
+					onChange={this.handleNewLine("about")} 
 					type="text" 
 					className="form-control" 
 					value={about}
 				/>
 			</div>
 			<div className="form-group">
-				<label className="text-muted">Password</label>
+				<label className="text-muted">Password [leave this field blank if you don't want to change your password]</label>
 				<input 
 					onChange={this.handleChange("password")} 
 					type="password" 

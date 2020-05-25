@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {singlePost, remove, like, unlike} from './apiPost'
-import DefaultImage from "../images/abstract.jpeg"
+import DefaultImage from "../images/abstract.png"
 import { Link, Redirect } from "react-router-dom"
 import {isAuthenticated} from "../auth"
 import Comment from "./Comment"
@@ -118,7 +118,7 @@ class SinglePost extends Component {
 		    )}
 		   
 		    <p className="card-text">
-				{post.body}
+				<span style={{whiteSpace: "pre-line"}}>{post.body}</span>
 			</p>
 			<br/>
 			<p className="font-italic mark">
