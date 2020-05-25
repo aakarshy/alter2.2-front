@@ -140,6 +140,7 @@ class EditPost extends Component {
             <div className="form-group">
                 <label className="text-muted">Body</label>
                 <textarea
+                    rows="10" columns="50"
                     onChange={this.handleChange("body")}
                     type="text"
                     className="form-control"
