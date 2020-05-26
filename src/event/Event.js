@@ -6,7 +6,7 @@ class Event extends Component {
 		return (
 			<div>
 				<div id="bg-event">
-					<h2 id="head">Guess the colour of the code below in one try to start creating a streak!</h2>
+					<h2 id="head">Guess the colour of the code below in one guess to start creating a streak!</h2>
 					<h1 id="color">COLOUR: <span id="colorDisplay"> RGB </span></h1>
 					<h5 id="refresh"> Refresh if you just landed on the page </h5>
 					<div id="stripe">
