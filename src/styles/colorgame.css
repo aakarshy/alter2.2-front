@@ -1,0 +1,61 @@
+#bg-event{
+	background-color: #232323;
+}
+
+.square{
+	width:30%;
+	background:purple;
+	padding-bottom: 30%;
+	float:left;
+	margin:1.66%;
+	border-radius: 15%;
+	transition: background 1.0s;
+	-webkit-transition: background 1.0s;
+}
+
+#container{
+	margin: 0 auto;
+	max-width: 600px;
+}
+#container2{
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+#container3{
+	color: white;
+}
+
+#color{
+	color: white;
+}
+
+#head{
+	color: white;
+}
+
+#refresh{
+	color: red;
+}
+
+#colorDisplay{
+	color: white;
+}
+
+#streak{
+	color: white;
+}
+
+#message{
+	color: white;
+}
+
+#stripe{
+	color: white;
+	height: 30px;
+	text-align: center;
+
+}
+.selected{
+	background: blue;
+}

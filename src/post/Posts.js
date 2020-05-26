@@ -93,7 +93,7 @@ class Posts extends Component {
 		return (
 			<div className="container">
 				<h2 className="mt-5 mb-5">
-				<strong>
+				<strong style={{color: "white"}}>
 					{!posts.length ? 'No more posts!' : 'Recent Posts'}
 				</strong>
 				</h2>

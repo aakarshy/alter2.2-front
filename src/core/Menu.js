@@ -10,7 +10,7 @@ const isActive = (history, path) => {
 
 const Menu = ({history}) => (
 	<div>
-		<ul className="nav nav-tabs" style = {{ backgroundColor: "#2f4f4f"}}>
+		<nav className="nav nav-tabs" style = {{ backgroundColor: "#2f4f4f"}}>
 			<li className="nav-item">
 				<Link 
 					className="nav-link" 
@@ -20,6 +20,17 @@ const Menu = ({history}) => (
 					<strong>A L T E R</strong> 
 				</Link>
 			</li>
+
+			<li className="nav-item">
+				<Link 
+					className="nav-link" 
+					style={isActive(history,"/event")} 
+					to="/event"
+				>
+					event
+				</Link>
+			</li>
+
 
 	{/*		<li className="nav-item">
 				<Link 
@@ -32,12 +43,14 @@ const Menu = ({history}) => (
 			</li>*/}
 			{!isAuthenticated() && (
 				<>
-					<li className="nav-item" style={{marginLeft: "85%"}}>
+				<ul className="nav nav-tabs ml-auto">
+					<li className="nav-item">
 						<Link className="nav-link" style={isActive(history,"/signin")} to="/signin">Sign In</Link>
 					</li>
-					<li className="nav-item" >
+					<li className="nav-item float-left" >
 						<Link className="nav-link" style={isActive(history,"/signup")} to="/signup">Sign Up</Link>
 					</li>
+				</ul>
 				</>
 			)}
 
@@ -79,7 +92,7 @@ const Menu = ({history}) => (
 							{`${isAuthenticated().user.name}'s profile`} 
 						</Link>
 					</li>
-
+				<ul className="nav nav-tabs ml-auto">
 					<li className="nav-item">
 						<span 
 							className="nav-link" 
@@ -88,6 +101,7 @@ const Menu = ({history}) => (
 							to="/signout">Sign Out</span>
 						{/* in signout we use a tag instead of link tag because we are not linking two different components */}
 					</li>
+				</ul>
 				</>
 			)}
 			{isAuthenticated() && isAuthenticated().user.role === "admin" && (
@@ -101,7 +115,7 @@ const Menu = ({history}) => (
 			        </Link>
 			    </li>
 			)}	
-		</ul>
+		</nav>
 	</div>
 )
 

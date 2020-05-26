@@ -15,6 +15,7 @@ import PrivateRoute from './auth/PrivateRoute'
 import ForgotPassword from './user/ForgotPassword'
 import ResetPassword from './user/ResetPassword'
 import Admin from './admin/Admin'
+import Event from './event/Event'
 
 
 
@@ -32,6 +33,7 @@ const MainRouter = () => (
 				<PrivateRoute exact path="/post/create" component={NewPost} />
 				<Route exact path="/post/:postId" component={SinglePost} />			
 				<Route exact path="/reset-password/:resetPasswordToken" component={ResetPassword} />
+				<Route exact path="/event" component={Event} />
 				<PrivateRoute exact path="/post/edit/:postId" component={EditPost} />	
 				<PrivateRoute exact path="/findpeople" component={FindPeople} />
 				<PrivateRoute exact path="/admin" component={Admin} />

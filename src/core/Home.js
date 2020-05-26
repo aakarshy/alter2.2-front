@@ -6,9 +6,10 @@ import "../styles/home.css"
 
 const Home = () => (
 	<div>
+		<div id="bg-home">
 		<div className="jumbotron row">
 		<div className="col-md-4">
-			<span className="row">
+			<span className="row" id="alter">
 			{/*<img src={Logo} height="100px" width="auto" />*/}
 			<div className="ml-3"><h3 className="text-center"><strong> A L T E R 2 . 2 </strong></h3>
 			<hr /><p className="lead text-center">FORUM [BARE MODERATION]</p></div>
@@ -39,6 +40,7 @@ const Home = () => (
   <div class="footer"><a href="https://sites.google.com/view/privacy-policy-alter/home">
   	Privacy Policy
   	</a>
+  	</div>
   </div>
 	</div>
 
