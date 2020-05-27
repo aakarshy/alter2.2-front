@@ -4,6 +4,7 @@ import DefaultImage from "../images/abstract.png"
 import { Link, Redirect } from "react-router-dom"
 import {isAuthenticated} from "../auth"
 import Comment from "./Comment"
+import Linkify from 'react-linkify'
 class SinglePost extends Component {
 	state = {
 		post: '',
@@ -119,7 +120,7 @@ class SinglePost extends Component {
 		   
 		    <p className="card-text mt-5">
 				<span style={{whiteSpace: "pre-line", fontFamily: 'Source Sans Pro ,sans-serif', fontSize: "1.5em", fontWeight: "500"}}>
-					{post.body}
+					<Linkify>{post.body}</Linkify>
 				</span>
 			</p>
 			<br/>
