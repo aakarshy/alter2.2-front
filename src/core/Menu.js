@@ -10,7 +10,7 @@ const isActive = (history, path) => {
 
 const Menu = ({history}) => (
 	<div>
-		<nav className="nav nav-tabs" style = {{ backgroundColor: "#2f4f4f"}}>
+		<nav className="nav nav-tabs" style = {{ backgroundColor: "#000000"}}>
 			<li className="nav-item">
 				<Link 
 					className="nav-link" 

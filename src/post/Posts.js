@@ -47,8 +47,8 @@ class Posts extends Component {
 					const posterId = post.postedBy ? post.postedBy._id : ""
 					const posterName = post.postedBy ? post.postedBy.name : "Unknown"
 					return (
-						<div className="card col-md-4" key={i} style={{backgroundColor: "#dddddd",marginLeft: "0%"}}> 
-						  <div className="card-body" style={{backgroundColor: "#eeeeee"}}>
+						<div className="card col-md-4" key={i} style={{backgroundColor: "#000000",marginLeft: "0%", marginBottom: "2%"}} > 
+						  <div className="card-body" style={{backgroundColor: "#cccccc"}}>
 						  	<img 
 						  		src={`${process.env.REACT_APP_API_URL}/post/photo/${post._id}`}
 						    	alt={post.title}
@@ -56,7 +56,7 @@ class Posts extends Component {
 						    		{i.target.src = `${DefaultImage}`}
 						    	}
 						    	className = "img-thumbnail mb-3"
-						    	style={{ height: "200px", width: "auto"}}
+						    	style={{ height: "150px", width: "auto"}}
 						    />
 						    <h5 className="card-title">{post.title}</h5>
 						    <p className="card-text">

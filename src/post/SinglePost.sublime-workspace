@@ -1,0 +1,661 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"enable",
+				"enableDarkMode"
+			],
+			[
+				"te",
+				"text-decoration\tproperty"
+			],
+			[
+				"Link",
+				"Linkify"
+			],
+			[
+				"font",
+				"font-italic"
+			],
+			[
+				"about",
+				"About"
+			],
+			[
+				"post",
+				"postedBy"
+			],
+			[
+				"meho",
+				"methodOverride"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"err",
+				"err"
+			],
+			[
+				"adm",
+				"adminUser"
+			],
+			[
+				"a",
+				"authorized"
+			],
+			[
+				"id",
+				"_id"
+			],
+			[
+				"del",
+				"deleteTravel"
+			],
+			[
+				"is",
+				"isTraveller"
+			],
+			[
+				"Travel",
+				"Travel"
+			],
+			[
+				"align",
+				"align-content\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"api",
+				"api"
+			],
+			[
+				"aut",
+				"authorized"
+			],
+			[
+				"set",
+				"setState"
+			],
+			[
+				"image",
+				"imageFile"
+			],
+			[
+				"ima",
+				"imageFile"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"photo",
+				"photo"
+			],
+			[
+				"redirect",
+				"redirectToSingin"
+			],
+			[
+				"update",
+				"update"
+			],
+			[
+				"pos",
+				"post"
+			],
+			[
+				"rend",
+				"renderPost"
+			],
+			[
+				"Default",
+				"DefaultImage"
+			],
+			[
+				"R",
+				"REACT_APP_API_URL"
+			],
+			[
+				"posts",
+				"Posts"
+			],
+			[
+				"follow",
+				"followMessage"
+			],
+			[
+				"following",
+				"following"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"Profile",
+				"ProfileTabs"
+			],
+			[
+				"Fo",
+				"FollowProfileButton"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"_",
+				"_id"
+			],
+			[
+				"lo",
+				"localStorage"
+			],
+			[
+				"De",
+				"DefaultProfile"
+			],
+			[
+				"re",
+				"redirectToProfile"
+			],
+			[
+				"props",
+				"props"
+			],
+			[
+				"naem",
+				"name"
+			],
+			[
+				"signin",
+				"signin"
+			],
+			[
+				"gr",
+				"gear"
+			],
+			[
+				"user",
+				"userId"
+			],
+			[
+				"express",
+				"expressJwt"
+			],
+			[
+				"cook",
+				"cookieParser"
+			],
+			[
+				"animation",
+				"animation-delay\tproperty"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"background",
+				"background-color\tproperty"
+			],
+			[
+				"comment",
+				"comment_id"
+			],
+			[
+				"campgr",
+				"campground"
+			],
+			[
+				"fin",
+				"findById"
+			],
+			[
+				"router",
+				"router"
+			],
+			[
+				"pa",
+				"passportLocalMongoose"
+			],
+			[
+				"G",
+				"Granger"
+			],
+			[
+				"find",
+				"findByIdAndUpdate"
+			],
+			[
+				"camp",
+				"campground"
+			],
+			[
+				"g",
+				"generateRandomColors"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"color",
+				"colorDisplay"
+			],
+			[
+				"ta",
+				"text-align\tproperty"
+			],
+			[
+				"border-co",
+				"border-color\tproperty"
+			],
+			[
+				"op",
+				"option\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ch",
+				"Snippet: chrome_background"
+			],
+			[
+				"intell",
+				"SublimeCodeIntel: Enable Live Autocompletion for Current Language"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"chrom",
+				"ChromeExtensionI18nHelper"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"cance",
+				"Build: Cancel"
+			],
+			[
+				"",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"rrc",
+				"Snippet: React: pure render component skeleton"
+			],
+			[
+				"ba",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"syntax bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jav",
+				"Set Syntax: Java"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"ejs",
+				"Set Syntax: EJS"
+			],
+			[
+				"EJS ",
+				"Snippet: <%(=) 'insert ejs tags' %>"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/foxtrot/Desktop/Web Dev/Extension_Tutorial/background.js",
+		"/home/foxtrot/Desktop/Web Dev/Extension_Tutorial/popup.html",
+		"/home/foxtrot/Desktop/Web Dev/Extension_Tutorial/content.js",
+		"/home/foxtrot/Desktop/Web Dev/Extension_Tutorial/contentMessaging.js",
+		"/home/foxtrot/Desktop/Web Dev/Extension_Tutorial/backgroundMessaging.js",
+		"/home/foxtrot/Desktop/Web Dev/Extension_Tutorial/contentRequests.js",
+		"/home/foxtrot/Desktop/Web Dev/Extension_Tutorial/manifest.json",
+		"/home/foxtrot/Desktop/Web Dev/Extension_Tutorial/reference",
+		"/home/foxtrot/Desktop/Carmistry/carmistry/carmistry-front/.env",
+		"/home/foxtrot/Desktop/Carmistry/react-node-ecommerce-master/final-code-with-improvments/ecommerce/package.json",
+		"/home/foxtrot/Desktop/Web Dev/Extension_Tutorial/logo.jpeg",
+		"/home/foxtrot/Desktop/Web Dev/Alter_Extension/content.js",
+		"/home/foxtrot/Desktop/Web Dev/Alter_Extension/manifest.json",
+		"/home/foxtrot/Desktop/Web Dev/Alter_Extension/background.js",
+		"/home/foxtrot/.config/sublime-text-3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/home/foxtrot/.config/sublime-text-3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/home/foxtrot/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/foxtrot/Desktop/Web Dev/Extension_Tutorial/package-lock.json",
+		"/home/foxtrot/Desktop/Web Dev/Extension_Tutorial/package.json",
+		"/home/foxtrot/Desktop/Web Dev/Chrome_Extension/popup.html",
+		"/home/foxtrot/Desktop/Web Dev/react-front/.env",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/Signin.js",
+		"/home/foxtrot/Desktop/Web Dev/Chrome_Extension/popup.js",
+		"/home/foxtrot/Desktop/Web Dev/Chrome_Extension/manifest.json",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/javascripts/colorgame.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/event/Event.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/app.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/controllers/post.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/core/Home.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/core/Menu.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/styles/home.css",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/routes/post.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/post/apiPost.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/userAPI.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/models/user.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/post/Comment.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/public/index.html",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/post/SinglePost.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/Signup.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/post/EditPost.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/styles/menu.css",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/Profile.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/.env",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/styles/home_script.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/App.css",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/chat/Chat.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/models/chat.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/controllers/user.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/routes/user.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/EditProfile.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/admin/Admin.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/SocialLogin.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/controllers/auth.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/post/Posts.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/MainRouter.js",
+		"/home/foxtrot/Desktop/Web Dev/travel/react-front/src/MainRouter.js",
+		"/home/foxtrot/Desktop/Web Dev/travel/react-front/src/travel/Travel.js",
+		"/home/foxtrot/Desktop/Web Dev/travel/react-front/src/post/EditPost.js",
+		"/home/foxtrot/Desktop/Web Dev/travel/react-front/src/travel/EditTravel.js",
+		"/home/foxtrot/Desktop/Web Dev/travel/reactjs/controllers/travel.js",
+		"/home/foxtrot/Desktop/Web Dev/travel/reactjs/app.js",
+		"/home/foxtrot/Desktop/Web Dev/travel/reactjs/validator/index.js",
+		"/home/foxtrot/Desktop/Web Dev/travel/react-front/src/travel/NewTravel.js",
+		"/home/foxtrot/Desktop/Web Dev/travel/react-front/src/user/Profile.js",
+		"/home/foxtrot/Desktop/Web Dev/travel/react-front/src/user/ProfileTabs.js",
+		"/home/foxtrot/Desktop/Web Dev/travel/react-front/src/core/Home.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/models/travel.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/routes/travel.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/travel/apiTravel.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/travel/Travel.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/travel/NewTravel.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/controllers/travel.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/validator/index.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/FbLogin.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/post/NewPost.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/auth/index.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/routes/auth.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/ForgotPassword.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/ResetPassword.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/helpers/index.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/docs/apiDocs.json",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/package.json",
+		"/home/foxtrot/Desktop/Web Dev/react-front/.gitignore",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/.gitignore",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/exp.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/ProfileTabs.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/models/post.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/package.json",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/App.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/index.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/DeleteUser.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/FollowProfileButton.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/FindPeople.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/auth/PrivateRoute.js",
+		"/home/foxtrot/Desktop/Web Dev/map.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/src/user/Users.js",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/node_modules/got/source/merge.js",
+		"/home/foxtrot/Desktop/Web Dev/react-front/.env.development",
+		"/home/foxtrot/Desktop/Web Dev/react-front/package-lock.json",
+		"/home/foxtrot/.npm/_logs/2020-04-27T20_11_40_393Z-debug.log",
+		"/home/foxtrot/.npm/_logs/2020-04-27T20_00_01_340Z-debug.log",
+		"/home/foxtrot/Desktop/Web Dev/react_tutorial/lareact/src/App.js",
+		"/home/foxtrot/Desktop/Web Dev/react_tutorial/lareact/src/loading.js",
+		"/home/foxtrot/Desktop/Web Dev/react_tutorial/lareact/src/index.js",
+		"/home/foxtrot/Desktop/Web Dev/react_tutorial/lareact/node_modules/faye-websocket/lib/faye/websocket/api/event.js",
+		"/home/foxtrot/Desktop/Web Dev/react_tutorial/lareact/src/index.css",
+		"/usr/local/MATLAB/R2017a/licenses/mw_4a_config.bin",
+		"/usr/local/licenses/mw_4a_config.bin",
+		"/home/foxtrot/Desktop/Web Dev/reactjs/appnjs",
+		"/home/foxtrot/Desktop/friendreq-system-master/views/index.handlebars",
+		"/home/foxtrot/Desktop/friendreq-system-master/views/login.handlebars",
+		"/home/foxtrot/Desktop/project/v2/models/followModel.js",
+		"/home/foxtrot/Desktop/project/v2/models/account.js",
+		"/home/foxtrot/Desktop/project/v2/models/user.js",
+		"/home/foxtrot/Desktop/project/v2/app.js",
+		"/home/foxtrot/Desktop/project/v2/v2",
+		"/home/foxtrot/Desktop/project/home.ejs",
+		"/home/foxtrot/Desktop/Web Dev/NodeJS/YelpCamp/v3/app.js",
+		"/home/foxtrot/Desktop/Web Dev/NodeJS/YelpCamp/v2/app.js",
+		"/home/foxtrot/Desktop/Web Dev/Deployment/views/home.ejs",
+		"/home/foxtrot/Desktop/Web Dev/Deployment/views/about.ejs",
+		"/home/foxtrot/Desktop/Web Dev/Deployment/package.json",
+		"/home/foxtrot/Desktop/Web Dev/Deployment/app.js",
+		"/home/foxtrot/Desktop/Web Dev/NodeJS/YelpCamp/v2/views/partials/header.ejs",
+		"/home/foxtrot/Desktop/Web Dev/NodeJS/YelpCamp/v2/public/stylesheets/landing.css",
+		"/home/foxtrot/Desktop/Web Dev/NodeJS/YelpCamp/v2/views/landing.ejs",
+		"/home/foxtrot/Desktop/Web Dev/NodeJS/YelpCamp/v2/routes/index.js",
+		"/home/foxtrot/Desktop/Web Dev/NodeJS/YelpCamp/v2/routes/campgrounds.js"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 190.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\", "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 78.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "SinglePost.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 203.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

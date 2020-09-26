@@ -2,20 +2,28 @@ import React from 'react';
 import '../App.css'
 import Posts from '../post/Posts'
 import Logo from "../images/logo.png"
-import "../styles/home.css"
+import "../styles/home.scss"
 
 const Home = () => (
 	<div>
 		<div id="bg-home">
-		<div className="jumbotron row">
-		<div className="col-md-4">
-			<span className="row" id="alter">
+	
+		{/*<div className="col-md-4">*/}
+		<div className="container">
+			<div className="alter">
+			<div className="container_alter">
+  				<div className="glitch" data-text="ALTER2.2">ALTER2.2</div>
+ 			 	<div className="glow">ALTER2.2</div>
+ 		 		<p className="subtitle">BARE MODERATION</p>
+  			</div>
+ 			<div className="scanlines"></div>
 			{/*<img src={Logo} height="100px" width="auto" />*/}
-			<div className="ml-3"><h3 className="text-center"><strong> A L T E R 2 . 2 </strong></h3>
-			<hr /><p className="lead text-center">FORUM [BARE MODERATION]</p></div>
-			</span>
+			</div>
 		</div>
-		<div className="col-md-8 text-center">
+		{/*</div>*/}
+
+		{/*<div className="jumbotron row">
+		<div className="text-center" id="about">
 			<h2><strong> A B O U T </strong></h2>
 		<span id="rules">
 
@@ -32,16 +40,17 @@ const Home = () => (
 		
 		</span>
 		</div>
-		</div>
-		<div className="container">
+		</div>*/}
+		
+	<div className="container">
 			<Posts />
 		</div>
 
-  <div class="footer"><a href="https://sites.google.com/view/privacy-policy-alter/home">
+  <div className="footer"><a href="https://sites.google.com/view/privacy-policy-alter/home">
   	Privacy Policy
   	</a>
   	</div>
-  </div>
+	</div>
 	</div>
 
 );
