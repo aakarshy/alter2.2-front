@@ -16,7 +16,9 @@ import ForgotPassword from './user/ForgotPassword'
 import ResetPassword from './user/ResetPassword'
 import Admin from './admin/Admin'
 import Event from './event/Event'
-
+import CdcPosts from './cdcpost/CdcPosts'
+import NewCdcPost from './cdcpost/NewCdcPost'
+import SingleCdcPost from './cdcpost/SingleCdcPost'
 
 
 const MainRouter = () => (
@@ -37,6 +39,9 @@ const MainRouter = () => (
 				<PrivateRoute exact path="/post/edit/:postId" component={EditPost} />	
 				<PrivateRoute exact path="/findpeople" component={FindPeople} />
 				<PrivateRoute exact path="/admin" component={Admin} />
+				<Route exact path="/cdcposts" component={CdcPosts} />
+				<PrivateRoute exact path="/cdcpost/create" component={NewCdcPost} />
+				<Route exact path="/cdcpost/:postId" component={SingleCdcPost} />
 		</Switch>
 	</div>	
 );
