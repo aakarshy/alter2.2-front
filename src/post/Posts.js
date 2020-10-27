@@ -99,7 +99,7 @@ class Posts extends Component {
 				</h2>
 				<h4 className="mb-5">
 				<em style={{color: "white"}}>
-					Sign in to contirbute. Remember. Apes together....strong
+					Sign in to contribute. Remember. Apes together....strong
 				</em>
 				</h4>
 			
