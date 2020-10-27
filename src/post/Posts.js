@@ -94,7 +94,7 @@ class Posts extends Component {
 			<div className="container">
 				<h2 className="mt-5 mb-5">
 				<strong style={{color: "white"}}>
-					{!posts.length ? 'No more posts!' : 'Recent Posts'}
+					{!posts.length ? 'No more posts!' : 'Recent Posts [ Sign in to create posts and contribute. Beause Apes together...strong ]'}
 				</strong>
 				</h2>
 			
