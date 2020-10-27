@@ -92,16 +92,16 @@ class Posts extends Component {
 		const { posts, page } = this.state;
 		return (
 			<div className="container">
-				<h2 className="mt-5 mb-5">
+				<h2 className="mt-5">
 				<strong style={{color: "white"}}>
 					{!posts.length ? 'No more posts!' : 'Recent Posts  '}
 				</strong>
 				</h2>
-				<h3>
-				<em stlye={{color: "white"}}>
+				<h4 className="mb-5">
+				<em style={{color: "white"}}>
 					Sign in to contirbute. Remember. Apes together....strong
 				</em>
-				</h3>
+				</h4>
 			
 				{this.renderPosts(posts)}
 
