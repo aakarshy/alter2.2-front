@@ -101,6 +101,7 @@ class Posts extends Component {
 				<em stlye={{color: "white"}}>
 					Sign in to contirbute. Remember. Apes together....strong
 				</em>
+				</h3>
 			
 				{this.renderPosts(posts)}
 
