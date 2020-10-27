@@ -94,9 +94,13 @@ class Posts extends Component {
 			<div className="container">
 				<h2 className="mt-5 mb-5">
 				<strong style={{color: "white"}}>
-					{!posts.length ? 'No more posts!' : 'Recent Posts [ Sign in to create posts and contribute. Beause Apes together...strong ]'}
+					{!posts.length ? 'No more posts!' : 'Recent Posts  '}
 				</strong>
 				</h2>
+				<h3>
+				<em stlye={{color: "white"}}>
+					Sign in to contirbute. Remember. Apes together....strong
+				</em>
 			
 				{this.renderPosts(posts)}
 
