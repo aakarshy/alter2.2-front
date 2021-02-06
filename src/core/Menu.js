@@ -31,7 +31,7 @@ const Menu = ({history}) => (
 				</Link>
 			</li>
 
-			<li className="nav-item">
+					       {/*<li className="nav-item">
 				<Link 
 					className="nav-link" 
 					style={isActive(history,"/cdcposts")} 
@@ -39,7 +39,7 @@ const Menu = ({history}) => (
 				>
 					CDC
 				</Link>
-			</li>
+			</li>*/}
 
 
 	{/*		<li className="nav-item">
