@@ -47,7 +47,7 @@ const Home = () => (
 		</div>
 
   <div className="footer"><a href="https://sites.google.com/view/privacy-policy-alter/home">
-  	Privacy Policy
+  	PrivacyPolicy
   	</a>
   	</div>
 	</div>
